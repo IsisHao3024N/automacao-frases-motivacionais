@@ -1,4 +1,7 @@
 # 💬 Automação de Frases Motivacionais com n8n
+<img width="1911" height="892" alt="Captura de tela 2026-11-12 190438" src="https://github.com/user-attachments/assets/8c168f0b-fecc-4850-8b3c-b60d2fd31b55" />
+<img width="1911" height="962" alt="Captura de tela 2026-11-12 190528" src="https://github.com/user-attachments/assets/684be73d-0f1d-40c1-8ec3-8f7e94304d09" />
+
 
 Uma automação desenvolvida no **n8n** que busca frases motivacionais em inglês, traduz o conteúdo para português e envia o resultado por e-mail. O projeto também possui um workflow separado para notificar falhas não tratadas.
 
@@ -30,19 +33,10 @@ O workflow principal executa estas etapas:
 - **Gmail** — envio das mensagens e notificações.
 - **HTTP Request, IF e Error Trigger** — integração, validação e tratamento de falhas.
 
-## 🗂️ Estrutura do repositório
-
-```text
-automacao-frases-motivacionais/
-├── README.md
-└── workflows/
-    ├── FrasesMotivacionais.json
-    └── TratamentoDeErrosFrasesMotivacionais.json
-```
 
 ## 🚀 Como importar no n8n
 
-1. Baixe os arquivos JSON da pasta `workflows`.
+1. Baixe os arquivos JSON .
 2. No n8n, importe `FrasesMotivacionais.json` usando a opção **Import from File**.
 3. Importe também `TratamentoDeErrosFrasesMotivacionais.json`.
 4. Configure suas próprias credenciais do Gmail nos nós correspondentes.
