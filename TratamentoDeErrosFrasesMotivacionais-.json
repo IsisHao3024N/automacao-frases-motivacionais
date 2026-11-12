@@ -1,0 +1,59 @@
+{
+  "name": "TratamentoDeErrosFrasesMotivacionais",
+  "nodes": [
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.errorTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        0
+      ],
+      "id": "9508ae14-3522-44ea-a215-9f5e16d1cfef",
+      "name": "Error Trigger"
+    },
+    {
+      "parameters": {
+        "sendTo": "SEU_EMAIL_AQUI",
+        "subject": "Erro na automação de frases motivacionais",
+        "emailType": "text",
+        "message": "Sua Automação de frases apresentou uma falha",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2.2,
+      "position": [
+        224,
+        0
+      ],
+      "id": "981b9a71-e759-4a5d-8e64-eb22d02c8a20",
+      "name": "Send a message"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Error Trigger": {
+      "main": [
+        [
+          {
+            "node": "Send a message",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": true,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate"
+  },
+  "versionId": "ef596117-8dc5-44b7-99e8-6dad2d77721c",
+  "meta": {
+    "templateCredsSetupCompleted": true
+  },
+  "nodeGroups": [],
+  "id": "wVCG43dbkQEJfwiF",
+  "tags": []
+}
